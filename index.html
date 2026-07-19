@@ -3,36 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مطبخ الشيف قمر | Chef Qamar's Kitchen</title>
+    <title>مطبخ الشيف قمر</title>
     <style>
-        body { font-family: Arial, sans-serif; background-color: #fcf9f2; margin: 0; padding: 0; text-align: center; color: #3d2514; }
-        header { background-color: #ffffff; padding: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); position: relative; }
-        .logo { font-size: 24px; font-weight: bold; color: #3d2514; }
-        .btn-order { background-color: #e6a100; color: white; padding: 10px 20px; border-radius: 20px; text-decoration: none; font-weight: bold; position: absolute; left: 20px; top: 15px; }
-        .hero { padding: 60px 20px; background-image: radial-gradient(#d3c3b3 1px, transparent 1px); background-size: 20px 20px; }
-        .hero h1 { font-size: 48px; color: #3d2514; margin-bottom: 20px; line-height: 1.3; }
-        .food-img { width: 100%; max-width: 500px; border-radius: 10px; margin-top: 20px; }
-        .description { padding: 40px 20px; font-size: 20px; line-height: 1.6; max-width: 600px; margin: 0 auto; }
+        @import url('https://googleapis.com');
+        
+        body {
+            font-family: 'Cairo', Arial, sans-serif;
+            background-color: #f6f5f0;
+            background-image: radial-gradient(#d3cbbe 1px, transparent 1px);
+            background-size: 20px 20px;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #3d2216;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .btn-top-order {
+            background-color: #e6a100;
+            color: #3d2216;
+            padding: 10px 25px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: 900;
+            font-size: 16px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: 900;
+            color: #3d2216;
+        }
+        .hero-section {
+            padding: 60px 20px 20px 20px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .hero-title {
+            font-size: 42px;
+            font-weight: 900;
+            line-height: 1.2;
+            margin: 0 0 40px 0;
+            color: #3d2216;
+        }
+        .image-container {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .description-section {
+            background-color: #f6f5f0;
+            padding: 30px 20px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .desc-text {
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 1.6;
+            color: #3d2216;
+            margin: 0;
+        }
     </style>
 </head>
 <body>
 
-    
-
-
-    
-        <a href="#" class="btn-order">اطلب الآن</a>
+    <header>
+        <!-- استبدل الرقم 963900000000 برقم الواتساب الخاص بك لاحقاً -->
+        <a href="https://wa.me" class="btn-top-order">اطلب الآن</a>
         <div class="logo">مطبخ الشيف قمر</div>
     </header>
 
-    <div class="hero">
-        <h1>طعم بياخدك<br>لبيت العيلة!</h1>
-        <img src="https://unsplash.com" alt="كبة مقلية" class="food-img">
+    <div class="hero-section">
+        <h1 class="hero-title">طعم بياخدك<br>لبيت العيلة!</h1>
     </div>
 
-    <div class="description">
-        طبخ شرقي بيتوتي أصيل، محضر بحب وعناية. كبب، مناسف، ويبرق على أصوله.
+    <div class="image-container">
+        <!-- هذه صورة كبة شامية جاهزة ومفتوحة للجميع على الإنترنت لتطابق التصميم -->
+        <img src="https://unsplash.com" alt="كبة شامية">
     </div>
 
-</
+    <div class="description-section">
+        <p class="desc-text">طبخ شرقي بيتوتي أصيل، محضر بحب وعناية. كبب، مناسف، ويبرق على أصوله.</p>
+    </div>
+
+</body>
 </html>
+
