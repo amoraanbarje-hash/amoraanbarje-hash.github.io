@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مطبخ الشيف قمر | القائمة الكاملة</title>
+    <title>مطبخ الشيف قمر | الطعم الأصيل</title>
     <style>
         @import url('https://googleapis.com');
         
@@ -27,12 +27,13 @@
         }
         .btn-top-order {
             background-color: #e6a100;
-            color: #3d2216;
+            color: #ffffff;
             padding: 10px 25px;
             border-radius: 20px;
             text-decoration: none;
             font-weight: 900;
             font-size: 16px;
+            box-shadow: 0 4px 10px rgba(230,161,0,0.3);
         }
         .logo {
             font-size: 24px;
@@ -51,17 +52,6 @@
             margin: 0 0 20px 0;
             color: #3d2216;
         }
-        .image-container {
-            width: 100%;
-            max-width: 500px;
-            margin: 0 auto;
-            overflow: hidden;
-        }
-        .image-container img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
         .menu-section {
             max-width: 500px;
             margin: 30px auto;
@@ -72,41 +62,54 @@
             font-size: 24px;
             font-weight: 900;
             color: #e6a100;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
             border-bottom: 2px solid #e6a100;
             padding-bottom: 5px;
         }
-        .menu-item {
+        .card-item {
             background: white;
-            padding: 15px;
-            margin-bottom: 15px;
-            border-radius: 12px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            margin-bottom: 25px;
+        }
+        .card-img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            display: block;
+        }
+        .card-body {
+            padding: 20px;
+        }
+        .card-header-box {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
         }
         .item-name {
-            font-weight: 700;
-            font-size: 18px;
-        }
-        .item-desc {
-            font-size: 13px;
-            color: #777;
-            margin-top: 5px;
+            font-weight: 900;
+            font-size: 20px;
+            color: #3d2216;
         }
         .item-price {
             font-weight: 900;
             color: #e6a100;
-            font-size: 16px;
+            font-size: 18px;
             white-space: nowrap;
+        }
+        .item-desc {
+            font-size: 14px;
+            color: #666;
+            margin-top: 8px;
+            line-height: 1.5;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <!-- استبدلي الرقم أدناه برقم الواتساب السوري الخاص بكِ لتوصلك الطلبات مباشرة -->
+        <!-- ضعي رقمكِ هنا بدلاً من 963900000000 ليفتح واتسابكِ مباشرة -->
         <a href="https://wa.me" class="btn-top-order">اطلب الآن</a>
         <div class="logo">مطبخ الشيف قمر</div>
     </header>
@@ -115,36 +118,43 @@
         <h1 class="hero-title">طعم بياخدك<br>لبيت العيلة!</h1>
     </div>
 
-    <div class="image-container">
-        <img src="https://unsplash.com" alt="كبة شامية">
-    </div>
-
-    <!-- قسم تفاصيل الوجبات والمنيو المطور -->
     <div class="menu-section">
         <div class="section-title">🍽️ وجباتنا المميزة</div>
         
-        <div class="menu-item">
-            <div>
-                <div class="item-name">كبة شامية مقلية (بالدزن)</div>
-                <div class="item-desc">محشية باللحم البلدي المفروم والمكسرات الفاخرة</div>
+        <!-- كبة شامية ملونة -->
+        <div class="card-item">
+            <img class="card-img" src="https://unsplash.com" alt="كبة شامية">
+            <div class="card-body">
+                <div class="card-header-box">
+                    <div class="item-name">كبة شامية مقلية (بالدزن)</div>
+                    <div class="item-price">65,000 ل.س</div>
+                </div>
+                <div class="item-desc">محشية باللحم البلدي المفروم والمكسرات الفاخرة المقرمشة.</div>
             </div>
-            <div class="item-price">65,000 ل.س</div>
         </div>
 
-        <div class="menu-item">
-            <div>
-                <div class="item-name">وجبة يبرق (ورق عنب) شامية</div>
-                <div class="item-desc">مطبوخ بزيت الزيتون والحامض الأصيل على الأصول</div>
+        <!-- يبرق ورق عنب ملون -->
+        <div class="card-item">
+            <img class="card-img" src="https://unsplash.com" alt="يبرق ورق عنب">
+            <div class="card-body">
+                <div class="card-header-box">
+                    <div class="item-name">وجبة يبرق (ورق عنب) شامية</div>
+                    <div class="item-price">90,000 ل.س</div>
+                </div>
+                <div class="item-desc">مطبوخ بزيت الزيتون والحامض الأصيل ولحم الغنم الفاخر على الأصول.</div>
             </div>
-            <div class="item-price">90,000 ل.س</div>
         </div>
 
-        <div class="menu-item">
-            <div>
-                <div class="item-name">منسف عربي باللحم البلدي</div>
-                <div class="item-desc">أرز فاخر مع لحم طازج محمر ومزين بالمكسرات</div>
+        <!-- منسف عربي ملون -->
+        <div class="card-item">
+            <img class="card-img" src="https://unsplash.com" alt="منسف عربي">
+            <div class="card-body">
+                <div class="card-header-box">
+                    <div class="item-name">منسف عربي باللحم البلدي</div>
+                    <div class="item-price">160,000 ل.س</div>
+                </div>
+                <div class="item-desc">أرز فاخر مفلفل مع لحم طازج محمر، مكسرات محمصة، واللبن الأصيل.</div>
             </div>
-            <div class="item-price">160,000 ل.س</div>
         </div>
     </div>
 
